@@ -31,12 +31,18 @@ export default function RootLayout({
             <div className="flex justify-between h-16">
               <div className="flex items-center">
                 <Link href="/" className="flex items-center space-x-2">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
+                  <span className="text-2xl font-bold text-white">
                     Final IT
                   </span>
                 </Link>
               </div>
               <div className="flex items-center space-x-4">
+                <Link 
+                  href="/login" 
+                  className="px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-white/10 transition-colors duration-200"
+                >
+                  Log In
+                </Link>
                 <Link 
                   href="/signin" 
                   className="px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
