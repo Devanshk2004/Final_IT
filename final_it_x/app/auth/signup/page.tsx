@@ -3,17 +3,17 @@ import Link from 'next/link';
 export default function SignUp() {
   return (
     <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800">
-      <div className="max-w-md w-full space-y-8 p-10 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20">
+      <div className="max-w-md w-full space-y-6 p-9 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl border border-white/20">
         <div>
-          <h2 className="mt-6 text-center text-3xl font-bold text-white">
+          <h2 className="text-center text-3xl font-bold text-white">
             Create Account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-300">
             Join us to start your learning journey
           </p>
         </div>
-        <form className="mt-8 space-y-6" action="#" method="POST">
-          <div className="rounded-md space-y-4">
+        <form className="space-y-4" action="#" method="POST">
+          <div className="space-y-3">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                 Full Name
@@ -23,7 +23,7 @@ export default function SignUp() {
                 name="name"
                 type="text"
                 required
-                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="appearance-none rounded-lg relative block w-full px-4 py-2.5 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                 placeholder="Enter your full name"
               />
             </div>
@@ -37,7 +37,7 @@ export default function SignUp() {
                 type="email"
                 autoComplete="email"
                 required
-                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="appearance-none rounded-lg relative block w-full px-4 py-2.5 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                 placeholder="Enter your email"
               />
             </div>
@@ -51,7 +51,7 @@ export default function SignUp() {
                 type="password"
                 autoComplete="new-password"
                 required
-                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="appearance-none rounded-lg relative block w-full px-4 py-2.5 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                 placeholder="Create a password"
               />
             </div>
@@ -65,7 +65,7 @@ export default function SignUp() {
                 type="password"
                 autoComplete="new-password"
                 required
-                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                className="appearance-none rounded-lg relative block w-full px-4 py-2.5 border border-gray-600 bg-gray-700/50 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                 placeholder="Confirm your password"
               />
             </div>
@@ -74,7 +74,7 @@ export default function SignUp() {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 transform hover:-translate-y-0.5"
+              className="group relative w-full flex justify-center py-2.5 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 transform hover:-translate-y-0.5"
             >
               Create Account
             </button>
@@ -84,7 +84,7 @@ export default function SignUp() {
         <div className="text-center">
           <p className="text-sm text-gray-300">
             Already have an account?{' '}
-            <Link href="/signin" className="font-medium text-blue-400 hover:text-blue-300 transition-colors">
+            <Link href="/auth/signin" className="font-medium text-blue-400 hover:text-blue-300 transition-colors">
               Sign in
             </Link>
           </p>

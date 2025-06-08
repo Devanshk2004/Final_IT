@@ -38,13 +38,13 @@ export default function RootLayout({
               </div>
               <div className="flex items-center space-x-4">
                 <Link 
-                  href="/login" 
+                  href="/auth/signup" 
                   className="px-4 py-2 rounded-lg text-sm font-medium text-white hover:bg-white/10 transition-colors duration-200"
                 >
-                  Log In
+                  Sign Up
                 </Link>
                 <Link 
-                  href="/signin" 
+                  href="/auth/signin" 
                   className="px-4 py-2 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
                 >
                   Sign In
